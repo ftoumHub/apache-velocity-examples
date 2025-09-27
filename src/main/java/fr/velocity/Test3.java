@@ -21,8 +21,8 @@ public class Test3 {
 
 		/* Get Velocity context */
 		final Context context = new VelocityContext();
-		context.put("name", "Vova");
-		context.put("age", 21);
+		context.put("name", "Georges");
+		context.put("age", 48);
 		context.put("flag", true);
 		context.put("today", new Date());
 		context.put("product", new Product("Book", 12.3));

@@ -26,6 +26,6 @@ public class Test1 {
 		/* Merge data into fr.velocity template */
 		template.merge(context, writer);
 
-		System.out.println(writer.toString());
+		System.out.println(writer);
 	}
 }

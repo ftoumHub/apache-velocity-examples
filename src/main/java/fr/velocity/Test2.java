@@ -10,7 +10,7 @@ import java.io.StringWriter;
 
 public class Test2 {
 
-	public Test2() throws Exception {
+	public Test2() {
 
 		Velocity.init("src/main/resources/velocity.properties");
 
@@ -20,8 +20,8 @@ public class Test2 {
 		/* Get Velocity context */
 		final Context context = new VelocityContext();
 
-		context.put("name", "Vova");
-		context.put("surname", "Ivanov");
+		context.put("name", "Georges");
+		context.put("surname", "GINON");
 
 		/* Get Writer */
 		final Writer writer = new StringWriter();
