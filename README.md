@@ -5,6 +5,8 @@ https://github.com/inbravo/apache-velocity-examples
 
 ### Introduction
 
+https://www.baeldung.com/apache-velocity
+
 https://velocity.apache.org/engine/1.4/user-guide_fr.html
 
 https://www.cours-gratuit.com/cours-framework-java/cours-detaille-avec-exemples-sur-le-framework-java-apache-velocity-pour-debutant
@@ -14,15 +16,18 @@ https://www.docsfold.com/docs/velocity-tutorial/
 
 https://codingtechroom.com/tutorial/java-apache-velocity-tutorial
 
+https://www.infoworld.com/article/2161335/start-up-the-velocity-template-engine.html
+
 ### Books
 
 https://github.com/Apress/pro-jakarta-velocity/blob/master/README.md
 
 
-
 ### Misc Code Source
 
 https://github.com/todvora/velocity-validator
+
+https://github.com/jazlopez/velocity-made-easier/tree/master
 
 https://apache.googlesource.com/velocity-engine/+/HEAD/velocity-engine-examples
 
@@ -50,7 +55,7 @@ https://github.com/schmittjoaopedro/java-word-template-filler
 https://github.com/thombergs/docx-stamper/tree/main
 
 
-### poi-tl templates
+### Pour aller plus loin : poi-tl templates
 
 https://github.com/Sayi/poi-tl
 https://deepoove.com/poi-tl/
@@ -60,3 +65,6 @@ https://freedium.cfd/https://medium.com/h7w/how-to-use-poi-tl-to-generate-a-pers
 https://github.com/Harries/Java-demo
 
 https://www.baeldung.com/poi-tl-ms-word
+
+https://github.com/realpdai/tech-pdai-spring-demos
+https://github.com/realpdai/tech-pdai-spring-demos/tree/main/476-springboot-demo-file-word-poi-tl
