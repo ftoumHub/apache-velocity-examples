@@ -1,6 +1,5 @@
-package test.velocity;
+package fr.velocity;
 
-import bean.Product;
 import org.apache.velocity.app.Velocity;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
@@ -8,31 +7,28 @@ import org.apache.velocity.context.Context;
 
 import java.io.Writer;
 import java.io.StringWriter;
-import java.util.Date;
 
-public class Test3 {
+public class Test2 {
 
-	public Test3() throws Exception {
+	public Test2() throws Exception {
 
-		Velocity.init("src/main/java/velocity.properties");
+		Velocity.init("src/main/resources/velocity.properties");
 
 		/* Get Velocity template */
-		final Template template = Velocity.getTemplate("Test3.vm");
+		final Template template = Velocity.getTemplate("Test2.vm");
 
 		/* Get Velocity context */
 		final Context context = new VelocityContext();
+
 		context.put("name", "Vova");
-		context.put("age", 21);
-		context.put("flag", true);
-		context.put("today", new Date());
-		context.put("product", new Product("Book", 12.3));
+		context.put("surname", "Ivanov");
 
 		/* Get Writer */
 		final Writer writer = new StringWriter();
 
-		/* Merge data into velocity template */
+		/* Merge data into fr.velocity template */
 		template.merge(context, writer);
 
-		System.out.println(writer.toString());
+		System.out.println(writer);
 	}
 }

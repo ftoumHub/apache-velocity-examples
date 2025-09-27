@@ -1,6 +1,6 @@
-package test.velocity;
+package fr.velocity;
 
-import bean.Product;
+import fr.bean.Product;
 import org.apache.velocity.app.Velocity;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
@@ -12,9 +12,9 @@ import java.util.ArrayList;
 
 public class Test5 {
 
-	public Test5() throws Exception {
+	public Test5() {
 
-		Velocity.init("src/main/java/velocity.properties");
+		Velocity.init("src/main/resources/velocity.properties");
 
 		/* Get Velocity template */
 		final Template template = Velocity.getTemplate("Test5.vm");
@@ -25,7 +25,6 @@ public class Test5 {
 		context.put("products", new ArrayList<Product>() {
 
 			private static final long serialVersionUID = 1L;
-
 			{
 				add(new Product("Apple", 10));
 				add(new Product("Orange", 12));
@@ -36,9 +35,9 @@ public class Test5 {
 		/* Get Writer */
 		final Writer writer = new StringWriter();
 
-		/* Merge data into velocity template */
+		/* Merge data into fr.velocity template */
 		template.merge(context, writer);
 
-		System.out.println(writer.toString());
+		System.out.println(writer);
 	}
 }

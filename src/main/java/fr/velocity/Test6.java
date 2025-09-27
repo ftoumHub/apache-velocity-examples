@@ -1,4 +1,4 @@
-package test.velocity;
+package fr.velocity;
 
 import org.apache.velocity.app.Velocity;
 import org.apache.velocity.Template;
@@ -7,24 +7,23 @@ import org.apache.velocity.context.Context;
 
 import java.io.Writer;
 import java.io.StringWriter;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
-import bean.Product;
+import fr.bean.Product;
 
-class Test6 {
+public class Test6 {
 
-	public Test6() throws Exception {
+	public Test6() {
 
-		Velocity.init("src/main/java/velocity.properties");
+		Velocity.init("src/main/resources/velocity.properties");
 
 		Context context = new VelocityContext();
 
-		final Collection<Product> products = new ArrayList<>();
-
-		products.add(new Product("Widget", 12.99));
-		products.add(new Product("Wotsit", 13.99));
-		products.add(new Product("Thingy", 11.99));
+		final Collection<Product> products = Arrays.asList(
+				new Product("Widget", 12.99),
+				new Product("Wotsit", 13.99),
+				new Product("Thingy", 11.99));
 
 		context.put("products", products);
 
@@ -32,6 +31,7 @@ class Test6 {
 
 		Writer writer2 = new StringWriter();
 		template2.merge(context, writer2);
-		System.out.println(writer2.toString());
+
+		System.out.println(writer2);
 	}
 }

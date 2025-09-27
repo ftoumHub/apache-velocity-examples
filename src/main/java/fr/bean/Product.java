@@ -1,4 +1,4 @@
-package bean;
+package fr.bean;
 
 public class Product {
 
