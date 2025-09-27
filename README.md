@@ -14,6 +14,12 @@ https://www.docsfold.com/docs/velocity-tutorial/
 
 https://codingtechroom.com/tutorial/java-apache-velocity-tutorial
 
+### Books
+
+https://github.com/Apress/pro-jakarta-velocity/blob/master/README.md
+
+
+
 ### Misc Code Source
 
 https://github.com/todvora/velocity-validator
